@@ -18,6 +18,14 @@ class TestDate {
         sc.close();
 
         // TODO : your code after this line
-        
+        SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
+        Calendar answer = new GregorianCalendar(month, day, year);
+        Date d = answer.getTime();
+        int dayOfWeek = answer.get(Calendar.DAY_OF_WEEK);
+
+        System.out.println("The date is : " + sdf.format(d));
+        System.out.println("The day of week is : " + dayOfWeek);
+
+
     }
 }

@@ -19,7 +19,7 @@ class TestDate {
 
         // TODO : your code after this line
         SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
-        Calendar answer = new GregorianCalendar(month, day, year);
+        Calendar answer = new GregorianCalendar(year, month - 1, day);
         Date d = answer.getTime();
         int dayOfWeek = answer.get(Calendar.DAY_OF_WEEK);
 
